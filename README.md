@@ -28,10 +28,6 @@ Click on it and type stuff like `help`, `whoami`, `interests`, `projects`, `gith
 - `screenshots/` - the pictures in this readme
 - `progress/` - the site stage by stage, from the first basic page to the finished one
 
-## How to run it
-
-No install needed. Just open `index.html` in your browser. If you use VS Code, the Live Server extension works too.
-
 ## How I made it
 
 Only plain HTML, CSS and JavaScript. No frameworks, because I wanted to keep it simple and actually understand all of it.
