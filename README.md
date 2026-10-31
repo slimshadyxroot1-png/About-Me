@@ -26,7 +26,6 @@ Click on it and type stuff like `help`, `whoami`, `interests`, `projects`, `gith
 - `style.css` - how it looks
 - `script.js` - makes the terminal work
 - `screenshots/` - the pictures in this readme
-- `progress/` - the site stage by stage, from the first basic page to the finished one
 
 ## How I made it
 
