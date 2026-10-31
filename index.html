@@ -14,6 +14,7 @@
       <a class="logo" href="#home">diwas ghimire</a>
       <nav>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
       </nav>
     </div>
   </header>
@@ -32,6 +33,17 @@
         <a class="btn" href="mailto:slimshadyxroot1@gmail.com">Email me</a>
       </p>
 
+      <!-- the little terminal, its commands are in script.js -->
+      <div class="term" id="term" aria-label="Interactive terminal">
+        <div class="term-bar">terminal</div>
+        <div class="term-body" id="term-out">
+          <p>Type <b>help</b> to see what you can ask me.</p>
+        </div>
+        <form class="term-line" id="term-form" autocomplete="off">
+          <label for="term-in">visitor@diwas:~$</label>
+          <input id="term-in" type="text" spellcheck="false" autocapitalize="off">
+        </form>
+      </div>
     </section>
 
     <section id="about">
@@ -65,7 +77,28 @@
       </ul>
     </section>
 
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Root Studio</h3>
+        <p>
+          A music production app that runs right in the browser. I started it
+          because I love music and DAWs cost way too much, so I wanted one
+          anyone could just open for free. It took me around 20 hours, and AI
+          helped me a lot along the way.
+        </p>
+        <p class="tags">HTML, CSS, JavaScript, Web Audio</p>
+      </article>
+
+      <p class="more">
+        There's more of my code on
+        <a href="https://github.com/slimshadyxroot1-png" target="_blank" rel="noopener">my GitHub</a>.
+      </p>
+    </section>
+
   </main>
 
+  <script src="script.js"></script>
 </body>
 </html>

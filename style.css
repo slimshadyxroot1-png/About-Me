@@ -108,16 +108,71 @@ h1 {
 }
 .btn.primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; }
 
-/* the rest of the selection */
-section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+/* terminal box */
+.term {
+  background: var(--term-bg);
+  color: var(--term-text);
+  border-radius: 6px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.92rem;
+  overflow: hidden;
+}
+
+.term-bar {
+  padding: 0.4rem 0.9rem;
+  background: #14171d;
+  color: #8b93a3;
+  font-size: 0.82rem;
+}
+
+.term-body {
+  padding: 0.8rem 0.9rem 0.2rem;
+  height: 15rem;
+  overflow-y: auto;
+}
+
+.term-body p { margin: 0 0 0.35rem; white-space: pre-wrap; line-height: 1.5; }
+.term-body .cmd { color: var(--term-prompt); }
+.term-body a { color: #9cc3ff; }
+.term-body b { color: #fff; }
+
+.term-line {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.5rem 0.9rem 0.8rem;
+}
+
+.term-line label { color: var(--term-prompt); white-space: nowrap; }
+
+.term-line input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  color: var(--term-text);
+  font: inherit;
+  padding: 0;
+}
+.term-line input:focus-visible { outline: none; }
+.term:focus-within { box-shadow: 0 0 0 2px var(--accent); }
+
+/* the rest of the sections */
+section { padding: 2.25rem 0; border-top: 1px solid var(--line); }
 section.hero { border-top: none; }
 
 h2 { font-size: 1.6rem; margin: 0 0 1rem; }
-h { font-size: 1.15rem; margin: 1.6rem 0 0.6 rem; }
+h3 { font-size: 1.15rem; margin: 1.6rem 0 0.6rem; }
 
 .interests { list-style: none; padding: 0; margin: 0; }
-.interest li { padding: 0.6 rem 0; border-bottom: 1px solid var(--line); }
-.interest li:last-child { border-bottom: none; }
-.interest strong { display: block; }
+.interests li { padding: 0.6rem 0; border-bottom: 1px solid var(--line); }
+.interests li:last-child { border-bottom: none; }
+.interests strong { display: block; }
+
+.project { margin-bottom: 1.75rem; }
+.project h3 { margin-top: 0; margin-bottom: 0.3rem; }
+.project p { margin: 0 0 0.4rem; }
+.tags { color: var(--muted); font-size: 0.92rem; }
+
+.more { color: var(--muted); }
 
 main { padding-bottom: 3rem; }
